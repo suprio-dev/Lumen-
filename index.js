@@ -3,16 +3,15 @@ let lightBeam = document.querySelector("#light-beam");
 let lampShade = document.querySelector("#lamp-shade");
 let lampRim = document.querySelector("#lamp-rim");
 let lightStatus = document.querySelector("#light-status");
-let counter = 0;
+let isON = false;
 
 
 toggleBtn.addEventListener('click', (e) => {
-  e.preventDefault();
-  counter++;
+  isON = !isON;
   lightBeam.classList.toggle("bg-amber-300/40");
   lampShade.classList.toggle("bg-amber-300");
   lampRim.classList.toggle("bg-amber-200");
-  if (counter % 2 !== 0) {
+  if (isON) {
     lightStatus.textContent = `ON`;
     toggleBtn.textContent = `TURN OFF`;
   } else {
