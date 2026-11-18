@@ -21,7 +21,7 @@ A sleek, interactive table lamp built with HTML, Tailwind CSS, and JavaScript. T
 - Manipulate Tailwind CSS classes dynamically
 - Smooth color transitions using CSS transitions
 - Modern dark UI with slate and amber accents
-- Persistant Theme using browser's `Local Storage`
+- Persistant Dark and Light Theme using browser's `Local Storage`
 - Responsive layout for different screen sizes
 
 ---
